@@ -1,0 +1,51 @@
+file = open("assignment 2", "r")
+
+with open("assignment 2", "r") as file: data = file.read() 
+print(data)
+
+with open("assignment 2", "w") as file: file.write("assignment x")
+
+# Open the input file for reading
+with open('input.txt', 'r') as infile:
+    # Read the content of the file
+    content = infile.read()
+
+# Modify the content (example: converting text to uppercase)
+modified_content = content.upper()
+
+# Open the output file for writing
+with open('output.txt', 'w') as outfile:
+    # Write the modified content to the new file
+    outfile.write(modified_content)
+
+print("File has been modified and saved as 'output.txt'.")
+
+# Ask the user for a filename
+filename = input("assignment x: ")
+
+try:
+    # Try opening the file in read mode
+    with open(assignment x, 'r') as infile:
+        # Read the content of the file
+        content = infile.read()
+
+    # Modify the content (example: converting text to uppercase)
+    modified_content = content.upper()
+
+    # Ask the user for an output filename
+    output_filename = input("Please enter the output filename: ")
+
+    # Write the modified content to the new file
+    with open(output_filename, 'w') as outfile:
+        outfile.write(modified_content)
+
+    print(f"File has been modified and saved as '{output_filename}'.")
+
+except FileNotFoundError:
+    print(f"Error: The file '{assignment x}' does not exist.")
+
+except IOError:
+    print(f"Error: The file '{assignment x}' could not be read or written.")
+
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
